@@ -5,6 +5,7 @@ void main() {
   bool isAvailable = true;
 
   double total = matchaOrders * matchaPrice;
+  double averagePrice = total / matchaOrders;
   bool isEnough = matchaOrders >= 5;
 
   print("Customer: $customerName");
@@ -12,5 +13,6 @@ void main() {
   print("Price per matcha: ₱$matchaPrice");
   print("Matcha available: $isAvailable");
   print("Total price: ₱$total");
+  print("Average price per order: ₱$averagePrice");
   print("Minimum order reached: $isEnough");
 }

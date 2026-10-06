@@ -3,4 +3,5 @@ Number of orders: 5
 Price per matcha: ₱180.0
 Matcha available: true
 Total price: ₱900.0
+Average price per order: ₱180.0
 Minimum order reached: true

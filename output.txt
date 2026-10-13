@@ -1,8 +1,23 @@
+========================================
+    MATCHA MORI LOGIC ORDER SYSTEM     
+========================================
 Customer: Cryst
-Number of orders: 5
-Price per matcha: ₱180.0
-Matcha available: true
-Total price: ₱900.0
-Average price per order: ₱180.0
-Minimum order reached: true
-Orders remaining to reach 10: 5
+
+[TEST 1: Normal Order Processing]
+Processing receipt breakdown:
+  Order #1: Standard Price (₱180.0)
+  Order #2: Standard Price (₱180.0)
+  Order #3: Standard Price (₱180.0)
+  Order #4: Standard Price (₱180.0)
+  Order #5: Bulk Promo Applied! (₱160.0)
+----------------------------------------
+Total price: ₱880.00
+Average price per order: ₱176.00
+
+========================================
+
+[TEST 2: Bad Input Test]
+Attempting to process -3 orders...
+--> Gracefully Caught Error: FormatException: Orders and price must be greater than zero!
+--> Program continued running safely without crashing!
+========================================
